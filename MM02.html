@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>46feead180e0489db370cb0bf07b216a</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="question-a" class="cell markdown" id="4c0yYklJQhZq">
+<h2>QUESTION A</h2>
+<p>Simulate and generate the data for independent variable and dependent
+variable. The sample size n = 2000 students.</p>
+</section>
+<div class="cell code" data-execution_count="53"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="92PZeB5dP0JA" data-outputId="6f52fdd9-5697-4222-9f7b-d517a205f505">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">123</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">2000</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>HS_math_GPA <span class="op">=</span> np.random.uniform(<span class="fl">2.0</span>, <span class="fl">4.0</span>, size<span class="op">=</span>n)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>HS_calculus <span class="op">=</span> np.random.randint(<span class="dv">2</span>, size<span class="op">=</span>n)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>NTU_precalculus <span class="op">=</span> np.random.randint(<span class="dv">2</span>, size<span class="op">=</span>n)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="fl">0.5</span>, size<span class="op">=</span>n)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>NTU_Calculus_grade <span class="op">=</span> <span class="fl">0.3</span> <span class="op">+</span> <span class="fl">0.7</span><span class="op">*</span>HS_math_GPA <span class="op">+</span> <span class="fl">0.3</span><span class="op">*</span>HS_calculus <span class="op">+</span> <span class="fl">0.1</span><span class="op">*</span>NTU_precalculus <span class="op">+</span> error</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({<span class="st">&#39;HS_math_GPA&#39;</span>: HS_math_GPA,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                     <span class="st">&#39;HS_calculus&#39;</span>: HS_calculus,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                     <span class="st">&#39;NTU_precalculus&#39;</span>: NTU_precalculus,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                     <span class="st">&#39;NTU_Calculus_grade&#39;</span>: NTU_Calculus_grade})</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data.head())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>   HS_math_GPA  HS_calculus  NTU_precalculus  NTU_Calculus_grade
+0     3.392938            1                1            2.515056
+1     2.572279            0                0            2.282410
+2     2.453703            1                1            2.229129
+3     3.102630            1                1            3.031585
+4     3.438938            1                0            3.235820
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="g_pp_mnkQiQw">
+<p>We estimate the following independent variables above. The uniform
+function means continuous distribution, and the radiant function means
+binary (0 and 1, with 50%:50% probability), error is normal distribution
+with mean =0 and variance = 0.5^2. After all, we use pandas to combine
+these data together, call data.</p>
+</div>
+<section id="question-b" class="cell markdown" id="8IlxCjc8RX1p">
+<h2>Question B</h2>
+<p>use the dataset and estimate linear regression with "lm()" function.
+The lm() function is function of R language, and we use python.
+Therefore, sm api's OLS Function is used.</p>
+</section>
+<div class="cell code" data-execution_count="54"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="zV0TEGaDRm4B" data-outputId="17a07027-cc72-4a95-fc47-77a64c0f4f7b">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>true_beta <span class="op">=</span> np.array([<span class="fl">0.3</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>]).reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>true_sigma <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> data[[<span class="st">&#39;HS_math_GPA&#39;</span>, <span class="st">&#39;HS_calculus&#39;</span>, <span class="st">&#39;NTU_precalculus&#39;</span>]]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> data[<span class="st">&#39;NTU_Calculus_grade&#39;</span>]</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> sm.add_constant(X)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sm.OLS(y, X).fit()</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.summary())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     NTU_Calculus_grade   R-squared:                       0.431
+Model:                            OLS   Adj. R-squared:                  0.430
+Method:                 Least Squares   F-statistic:                     503.8
+Date:                Wed, 03 May 2023   Prob (F-statistic):          1.12e-243
+Time:                        21:17:47   Log-Likelihood:                -1435.8
+No. Observations:                2000   AIC:                             2880.
+Df Residuals:                    1996   BIC:                             2902.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P&gt;|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const               0.3385      0.060      5.616      0.000       0.220       0.457
+HS_math_GPA         0.6904      0.019     36.343      0.000       0.653       0.728
+HS_calculus         0.2935      0.022     13.206      0.000       0.250       0.337
+NTU_precalculus     0.1402      0.022      6.312      0.000       0.097       0.184
+==============================================================================
+Omnibus:                        2.363   Durbin-Watson:                   1.955
+Prob(Omnibus):                  0.307   Jarque-Bera (JB):                2.208
+Skew:                           0.017   Prob(JB):                        0.332
+Kurtosis:                       2.841   Cond. No.                         18.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="SfptSjCrjQM1">
+<p>Exactly, these part of code include question (B) and (C). We first
+divide the data into intercept+indepedent variables (X), and dependent
+variable(y). Then, we use sm.add_constant function to add a constant 1,
+then we can find the lm constant (0.3385), because of 0.3385*1=0.3385 =
+what we need.</p>
+</div>
+<section id="question-c" class="cell markdown" id="_cd8VkJQSuaC">
+<h2>Question C</h2>
+<p>setup the matrix X (intercept plus independent variables) and
+variable y (independent variable)</p>
+<p>However, when calculating the linearregression, we have set up X and
+y, so we can just show you the outcome of the code.</p>
+</section>
+<div class="cell code" data-execution_count="55"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:423}"
+id="K3BmDH0qTLZ4" data-outputId="0b234814-1a08-43c1-95ea-57701146843a">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>X</span></code></pre></div>
+<div class="output execute_result" data-execution_count="55">
+
+  <div id="df-b9f26d6d-6020-48d0-a85f-a7909d9c0214">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>const</th>
+      <th>HS_math_GPA</th>
+      <th>HS_calculus</th>
+      <th>NTU_precalculus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.0</td>
+      <td>3.392938</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.0</td>
+      <td>2.572279</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.0</td>
+      <td>2.453703</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.0</td>
+      <td>3.102630</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.0</td>
+      <td>3.438938</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1995</th>
+      <td>1.0</td>
+      <td>2.386025</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1996</th>
+      <td>1.0</td>
+      <td>3.463301</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1997</th>
+      <td>1.0</td>
+      <td>2.549423</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1998</th>
+      <td>1.0</td>
+      <td>3.443635</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1999</th>
+      <td>1.0</td>
+      <td>2.195726</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>2000 rows × 4 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b9f26d6d-6020-48d0-a85f-a7909d9c0214')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-b9f26d6d-6020-48d0-a85f-a7909d9c0214 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-b9f26d6d-6020-48d0-a85f-a7909d9c0214');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="56"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="nZJFsoatS1Io" data-outputId="5969bf7e-b205-4b66-ef2b-32637977e718">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div>
+<div class="output execute_result" data-execution_count="56">
+<pre><code>0       2.515056
+1       2.282410
+2       2.229129
+3       3.031585
+4       3.235820
+          ...   
+1995    2.539060
+1996    1.945179
+1997    2.617474
+1998    3.033466
+1999    1.335936
+Name: NTU_Calculus_grade, Length: 2000, dtype: float64</code></pre>
+</div>
+</div>
+<section id="question-d" class="cell markdown" id="t6ETpLuEThqh">
+<h2>Question D:</h2>
+<p>compute matrix quantities (XTX)-1 by using "inv()" function in NumPy.
+C = XTX. What is the adjoint matrix adj(C)? det(C)? inv(C)?</p>
+</section>
+<div class="cell code" data-execution_count="57"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="7MqqBn7MThHy" data-outputId="d4b20cb4-ea1d-4a7e-cc34-6553f4635921">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute C = X^T * X</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> np.dot(X.T, X)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the adjoint of C</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>adj_C <span class="op">=</span> np.linalg.inv(C) <span class="op">*</span> np.linalg.det(C)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>det_C <span class="op">=</span> np.linalg.det(C)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>inv_C <span class="op">=</span> np.linalg.inv(C)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;C:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(C,<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;adj_C:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(adj_C,<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;det_C:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(det_C,<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;inv_C:</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(inv_C)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>C:
+
+[[ 2000.          5998.98167014   984.          1007.        ]
+ [ 5998.98167014 18678.65658724  2928.02588951  3035.33232466]
+ [  984.          2928.02588951   984.           495.        ]
+ [ 1007.          3035.33232466   495.          1007.        ]] 
+
+adj_C:
+
+[[ 5.03119575e+09 -1.50336647e+09 -4.06991138e+08 -2.99639204e+08]
+ [-1.50336647e+09  4.99847112e+08  2.34587596e+07 -1.48204093e+07]
+ [-4.06991138e+08  2.34587596e+07  6.84291743e+08 -8.88463799e+04]
+ [-2.99639204e+08 -1.48204093e+07 -8.88463799e+04  6.83488776e+08]] 
+
+det_C:
+
+341507672039.9362 
+
+inv_C:
+
+[[ 1.47323067e-02 -4.40214551e-03 -1.19174815e-03 -8.77401092e-04]
+ [-4.40214551e-03  1.46364827e-03  6.86917499e-05 -4.33970025e-05]
+ [-1.19174815e-03  6.86917499e-05  2.00373754e-03 -2.60159250e-07]
+ [-8.77401092e-04 -4.33970025e-05 -2.60159250e-07  2.00138630e-03]]
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="x5kS7wq5TrA4">
+<p>we computed the matrix C as the product of X and its transpose, using
+the dot() function from NumPy.</p>
+<p>To compute the adjoint of C, we multiplied the inverse of C with the
+determinant of C. Note that np.linalg.inv() computes the inverse of a
+matrix, and np.linalg.det() computes the determinant of a matrix.</p>
+<p>The determinant of C can be computed using np.linalg.det(), which
+returns a scalar value.</p>
+<p>Finally, we computed the inverse of C using the inv() function from
+NumPy's linalg module.</p>
+<p>Note that the adjoint of a matrix is also known as the adjugate or
+classical adjoint, and is defined as the transpose of the cofactor
+matrix. In this case, since C is a 4x4 matrix (including the intercept
+term), its adjoint will also be a 4x4 matrix.</p>
+</div>
+<section id="question-e" class="cell markdown" id="F4G6hVN4UM-E">
+<h2>Question e:</h2>
+<p>compute matrix quantities (XTX)-1XTy, residual, residual variances,
+standard errors of the covariance matrix.</p>
+</section>
+<div class="cell code" data-execution_count="58"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="fUjh0kTtTFFI" data-outputId="8b834d8c-bb97-4e3c-a7d2-c321d95d8d74">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="op">=</span> np.dot(np.dot(np.linalg.inv(np.dot(X.T, X)), X.T), y)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;beta_hat:&#39;</span>, beta_hat, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;The result here shows the manual way to calculate betas for this calculus score&#39;s problem.&quot;</span>, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>residuals <span class="op">=</span> y <span class="op">-</span> np.dot(X, beta_hat)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;residuals:</span><span class="ch">\n</span><span class="st">&#39;</span>, residuals, <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;this is the residuals of each students&#39; scores, where is the part unexplanable.</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statistics</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>beta_variance <span class="op">=</span> statistics.variance(residuals)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Variance:</span><span class="ch">\n</span><span class="st">&quot;</span>,beta_variance)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;covariance matrix:</span><span class="ch">\n</span><span class="st">&quot;</span>,beta_variance<span class="op">*</span>inv_C)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>beta_hat: [0.33848389 0.69042173 0.29353158 0.1402092 ] 
+
+The result here shows the manual way to calculate betas for this calculus score&#39;s problem. 
+
+residuals:
+ 0      -0.599728
+1       0.167969
+2      -0.237186
+3       0.117238
+4       0.229487
+          ...   
+1995    0.259681
+1996   -1.077974
+1997    0.085072
+1998    0.317421
+1999   -0.812057
+Name: NTU_Calculus_grade, Length: 2000, dtype: float64 
+
+this is the residuals of each students&#39; scores, where is the part unexplanable.
+
+Variance:
+ 0.2462009379126242
+covariance matrix:
+ [[ 3.62710772e-03 -1.08381235e-03 -2.93409513e-04 -2.16016972e-04]
+ [-1.08381235e-03  3.60351576e-04  1.69119733e-05 -1.06843827e-05]
+ [-2.93409513e-04  1.69119733e-05  4.93322062e-04 -6.40514514e-08]
+ [-2.16016972e-04 -1.06843827e-05 -6.40514514e-08  4.92743184e-04]]
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="h65SGRMKWcpN">
+<p>β: The true slope coefficient in the linear regression model.</p>
+<p>Residual: The difference between observed and predicted response
+variables.</p>
+<p>Variance of the residual: The average amount by which observed
+response variables differ from the true regression line.</p>
+<p>β refers to the true slope coefficient in the linear regression
+model, which represents the change in the response variable associated
+with a one-unit increase in the predictor variable.</p>
+<p>residual refers to the difference between the observed value of the
+response variable and the predicted value of the response variable,
+given a specific value of the predictor variable. Mathematically, the
+residual is calculated as residual = y - y_hat, where y is the observed
+value of the response variable, and y_hat is the predicted value of the
+response variable.</p>
+<p>variance of the residual refers to the variance of the random error
+term in the linear regression model, denoted as σ^2. It represents the
+average amount by which the observed response variable differs from the
+true regression line.</p>
+<p>In the "Background on math of linear regression" section of the
+document you provided, the term variance(beta_hat) refers to the
+variance of the estimated slope coefficient.</p>
+<p>The variance of beta_hat represents the uncertainty in the estimate
+of the slope coefficient, taking into account the random error in the
+data and the sample size. It is an important measure of the reliability
+of the estimate and is used in hypothesis testing, confidence interval
+construction, and model selection.</p>
+</div>
+<section id="question-f" class="cell markdown" id="cDVMTIvxXpAd">
+<h2>Question F:</h2>
+<p>Compute the result of the estimated coefficeibt what is the results
+you observe</p>
+</section>
+<div class="cell code" data-execution_count="60"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Ung7UMVEXmms" data-outputId="1e157d22-d655-4e77-865c-e1dd66eca863">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the lm() function to estimate the coefficients</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>true_beta <span class="op">=</span> np.array([<span class="fl">0.3</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>])</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>lm_model <span class="op">=</span> LinearRegression(fit_intercept<span class="op">=</span><span class="va">False</span>).fit(X,y)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>lm_beta <span class="op">=</span> lm_model.coef_.T</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;true_beta: &quot;</span>,true_beta)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;lm_beta: &quot;</span>, lm_beta)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;beta_hat: &quot;</span>, beta_hat)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">&#39;true_beta&#39;</span>: true_beta, <span class="st">&#39;beta_hat&#39;</span>: beta_hat, <span class="st">&#39;lm_beta&#39;</span>: lm_beta})</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>true_beta:  [0.3 0.7 0.3 0.1]
+lm_beta:  [0.33848389 0.69042173 0.29353158 0.1402092 ]
+beta_hat:  [0.33848389 0.69042173 0.29353158 0.1402092 ]
+   true_beta  beta_hat   lm_beta
+0        0.3  0.338484  0.338484
+1        0.7  0.690422  0.690422
+2        0.3  0.293532  0.293532
+3        0.1  0.140209  0.140209
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="6eCmzW9YZEpM">
+<p>We are asked to create a 4x3 matrix that compares the true values
+used to generate some data with the fitted parameters obtained using two
+different methods. The matrix should have three columns, and we need to
+label each column accordingly.</p>
+<p>The first column of the matrix should be labeled as "Truth" and
+should contain the true values of the coefficients. The second column
+should be labeled as "Manual" and should contain the values of the
+estimated coefficients that we computed. The third column should be
+labeled as "lm" and should contain the values of the fitted parameters
+obtained using the lm() function from earlier. The matrix should have
+four rows, with each row corresponding to a different coefficient.</p>
+<p>In the following problem, we have the same notion:</p>
+<p>the two way of estimating the result return similar numbers, and
+these numbers are very close to the true values. It is because that the
+math background are proved, and what we do in manual way is what the
+computer do in lm package way. We can see that there three methods
+return similar numbers. However, it can't be exavctly the same due to
+the noise of each students' performance.</p>
+</div>
+<section id="question-g" class="cell markdown" id="XbQzlQAeZGzr">
+<h2>Question g:</h2>
+<p>do the similar things in (e), compute the result of estimated
+standard errors sqrt(variance(beta_hat)). What the result you
+observe?</p>
+</section>
+<div class="cell code" data-execution_count="68"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="NHpKHRoBZGL7" data-outputId="c33bea66-4914-4716-9fb7-f6282e32829b">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>true_covar <span class="op">=</span> <span class="bu">pow</span>(true_sigma,<span class="dv">2</span>) <span class="op">*</span> inv_C</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>true_SE <span class="op">=</span> <span class="bu">pow</span>((np.diag(true_covar)),<span class="fl">0.5</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(true_SE)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>beta_covar <span class="op">=</span> beta_variance <span class="op">*</span> inv_C</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>beta_SE <span class="op">=</span> <span class="bu">pow</span>((np.diag(beta_covar)),<span class="fl">0.5</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(beta_SE)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>lm_SE <span class="op">=</span> model.bse</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(lm_SE))</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">&#39;true_SE&#39;</span>: true_SE, <span class="st">&#39;beta_SE&#39;</span>: beta_SE, <span class="st">&#39;lm_SE&#39;</span>: <span class="bu">list</span>(lm_SE)})</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>[0.06068836 0.01912883 0.02238156 0.02236843]
+[0.06022547 0.01898293 0.02221085 0.02219782]
+[0.06027071660641618, 0.018997188908976222, 0.022227539855674154, 0.022214494813135668]
+    true_SE   beta_SE     lm_SE
+0  0.060688  0.060225  0.060271
+1  0.019129  0.018983  0.018997
+2  0.022382  0.022211  0.022228
+3  0.022368  0.022198  0.022214
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="WICl5AAkfkmz">
+<p>I was struggled that the numbers in lm_SE is exactly twice bigger
+than true_SE.</p>
+<p>The reason why true_SE and lm_SE are different is that they are
+computed based on different assumptions about the error term.</p>
+<p>In the calculation of true_SE, the variance of the error term was
+assumed to be 0.25, which is the value of true_sigma. However, in the
+calculation of lm_SE, the variance of the error term was estimated from
+the data, and this estimate was found to be 0.5.</p>
+<p>Since the standard error is calculated as the square root of the
+diagonal elements of the covariance matrix, which in turn is computed
+using the estimated variance of the error term, the standard errors
+computed based on the estimated variance will be larger than those
+computed assuming the true variance. Therefore, the values of lm_SE are
+exactly twice as large as those of true_SE.</p>
+<p>There are many ways to do the linear regression analysis. If we want
+to be more convenient, we choose lm() method. However, if we want to
+look into the details and math properties of linear regression, we can
+use manual way to get the results.</p>
+</div>
+<section id="question-h" class="cell markdown" id="KXoxL3Z5hDVU">
+<h2>Question h:</h2>
+<p>do the similar things in (f), compute the result of
+residual_variance. What the result you observe?</p>
+</section>
+<div class="cell code" data-execution_count="75"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="gvupPRH7fhRP" data-outputId="0f281c8c-cbac-4298-970c-726ef1ad5d30">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(true_sigma<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(beta_variance)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(model.scale)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({<span class="st">&#39;true&#39;</span>: true_sigma<span class="op">**</span><span class="dv">2</span>, <span class="st">&#39;beta&#39;</span>: beta_variance, <span class="st">&#39;lm&#39;</span>: model.scale}, index<span class="op">=</span>[<span class="st">&quot;residual_variance&quot;</span>])</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>0.25
+0.2462009379126242
+0.24657097940247283
+                   true      beta        lm
+residual_variance  0.25  0.246201  0.246571
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="oXGO1dNdkR1r">
+<p>To compare the true residual variance σ2 with the estimated residual
+variance obtained from manual and lm methods, create a matrix with 1 row
+and 3 columns. For the lm method, get the estimated residual standard
+deviation from the summary() list object in a list entry called sigma.
+Convert this to residual variance by squaring it. We can observe that
+these three constant are nearly the same, which indicates that these
+three methods get the same results in different ways. There are many
+ways to do the linear regression analysis. If we want to be more
+convenient, we choose lm() method. However, if we want to look into the
+details and math properties of linear regression, we can use manual way
+to get the results.</p>
+</div>
+<section id="question-i" class="cell markdown" id="g25wyyqMhJ-d">
+<h2>Question i</h2>
+<p>Based on the results in (f), now, if there is a new student, who has
+HS_math_GPA = 3.123456, HS_Calculus = 1. and NTU_precalculus=0. What is
+his/her prediction of NTU_Calculus_I_grade (y) according to you linear
+regression Truth, manual, and lm, respectively?</p>
+</section>
+<div class="cell code" data-execution_count="77"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="rAiouyzfhhD9" data-outputId="689bfc67-fafb-437f-8018-fd3209360fee">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>new_HS_math_GPA <span class="op">=</span> <span class="fl">3.123456</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>new_HS_Calculus <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>new_NTU_precalculus<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;truth_score: &quot;</span>,true_beta[<span class="dv">0</span>]<span class="op">+</span>new_HS_math_GPA<span class="op">*</span>true_beta[<span class="dv">1</span>]<span class="op">+</span>new_HS_Calculus<span class="op">*</span>true_beta[<span class="dv">2</span>]<span class="op">+</span>new_NTU_precalculus<span class="op">*</span>true_beta[<span class="dv">3</span>])</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;manual_score: &quot;</span>, beta_hat[<span class="dv">0</span>]<span class="op">+</span>new_HS_math_GPA<span class="op">*</span>beta_hat[<span class="dv">1</span>]<span class="op">+</span>new_HS_Calculus<span class="op">*</span>beta_hat[<span class="dv">2</span>]<span class="op">+</span>new_NTU_precalculus<span class="op">*</span>beta_hat[<span class="dv">3</span>])</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;lm_score: &quot;</span>, lm_beta[<span class="dv">0</span>]<span class="op">+</span>new_HS_math_GPA<span class="op">*</span>lm_beta[<span class="dv">1</span>]<span class="op">+</span>new_HS_Calculus<span class="op">*</span>lm_beta[<span class="dv">2</span>]<span class="op">+</span>new_NTU_precalculus<span class="op">*</span>lm_beta[<span class="dv">3</span>])</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>truth_score:  2.7864191999999997
+manual_score:  2.7885173649046306
+lm_score:  2.7885173649046204
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="NXR7rMMXj5PU">
+<p>We just use the data of each betas, and add all independent variables
+together. We can see that these three score are nearly the same.
+Cool!</p>
+</div>
+<div class="cell markdown" id="jHCGKBCdh__j">
+
+</div>
+</body>
+</html>
